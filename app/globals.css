@@ -1,0 +1,17 @@
+@import "tailwindcss";
+@theme {
+  --color-brand-ink: #082f49;
+  --color-brand-blue: #1480d0;
+  --color-brand-sky: #00a1f1;
+  --color-brand-mist: #dcecf5;
+  --font-sans: var(--font-open-sans), "Open Sans", Roboto, system-ui, sans-serif;
+}
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } }
+body { @apply bg-white text-slate-800 antialiased; }
+:focus-visible { outline: 3px solid var(--color-brand-sky); outline-offset: 3px; border-radius: 6px; }
+@utility btn-primary { @apply inline-flex items-center gap-2 rounded-full bg-brand-blue px-6 py-3 font-semibold text-white shadow-lg shadow-brand-blue/30 transition hover:-translate-y-0.5 hover:bg-brand-sky; }
+@utility btn-ghost { @apply inline-flex items-center gap-2 rounded-full border border-white/40 px-6 py-3 font-semibold text-white transition hover:bg-white hover:text-brand-ink; }
+@utility link-underline { @apply relative after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-0 after:bg-brand-sky after:transition-all hover:after:w-full; }
+@utility eyebrow { @apply text-sm font-semibold uppercase tracking-[0.2em] text-brand-blue; }
+@utility h2 { @apply mt-3 text-3xl font-bold leading-tight text-brand-ink sm:text-4xl lg:text-5xl; }
