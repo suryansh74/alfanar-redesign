@@ -121,7 +121,7 @@ export default function Home() {
       </main>
       <footer className="bg-brand-ink text-white/80">
         <div className="mx-auto grid max-w-7xl gap-10 px-6 py-16 md:grid-cols-4">
-          <div><p className="text-2xl font-bold text-white">alfanar</p><p className="mt-3 text-sm">The Power of Excellence</p></div>
+          <div><Image src="/alfanar-logo-white.svg" alt="alfanar" width={156} height={46} className="h-11 w-auto" /><p className="mt-3 text-sm">The Power of Excellence</p></div>
           <nav aria-label="Sectors"><p className="font-semibold text-white">Sectors</p><ul className="mt-3 space-y-2 text-sm"><li>Energy & Grid</li><li>Process</li><li>Water</li><li>Data Centers</li><li>Building & Infrastructure</li><li>Renewable Energy</li></ul></nav>
           <nav aria-label="Company"><p className="font-semibold text-white">Company</p><ul className="mt-3 space-y-2 text-sm"><li><a className="link-underline" href="https://www.alfanar.com/company/about-us">About us</a></li><li><a className="link-underline" href="https://www.alfanar.com/careers">Careers</a></li><li><a className="link-underline" href="https://www.alfanar.com/media-center">Media center</a></li></ul></nav>
           <div><p className="font-semibold text-white">Get in touch</p><a href="https://www.alfanar.com/contact-us" className="btn-primary mt-4">Contact us</a></div>
