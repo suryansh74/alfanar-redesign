@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Reveal from "@/components/Reveal";
 import Counter from "@/components/Counter";
+import BgVideo from "@/components/BgVideo";
 import SectorExplorer from "@/components/SectorExplorer";
 import { stats, highlights, projects, quotes, careers, news, IMG } from "@/lib/content";
 
@@ -52,6 +53,16 @@ export default function Home() {
           </div>
         </section>
 
+        <section aria-labelledby="medinet" className="relative isolate flex min-h-[80vh] items-center overflow-hidden text-white">
+          <BgVideo src="https://prodalfwebstr.blob.core.windows.net/prod-container/Home/BEYONDTHEGATES/Medinetalfanar2025Comp.mp4" poster={`${IMG}/Impact/6GW.jpg`} />
+          <div className="absolute inset-0 -z-10 bg-gradient-to-t from-brand-ink via-brand-ink/60 to-brand-ink/30" />
+          <Reveal className="mx-auto w-full max-w-7xl px-6 py-24">
+            <p className="eyebrow !text-brand-sky">Powering everyday life</p>
+            <h2 id="medinet" className="h2 !text-white">Medinet alfanar</h2>
+            <p className="mt-5 max-w-2xl text-lg leading-relaxed text-white/90">Situated in Riyadh as the main industrial cluster in KSA, Medinet alfanar is where we bring ideas to life. This fully integrated industrial city powers the future of energy, infrastructure, and industry every day.</p>
+          </Reveal>
+        </section>
+
         <section id="projects" className="mx-auto max-w-7xl px-6 py-24">
           <Reveal><p className="eyebrow">Real-world stories</p><h2 className="h2">Projects that power progress</h2></Reveal>
           <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -69,7 +80,8 @@ export default function Home() {
         </section>
 
         <section id="sustainability" className="relative isolate overflow-hidden bg-brand-ink py-28 text-white">
-          <Image src={`${IMG}/Impact/6GW.jpg`} alt="" fill sizes="100vw" className="-z-10 object-cover opacity-30" />
+          <BgVideo src="https://media.alfanar.com/prod-container/Home/HeroBanner/alfanarHero-9s.mp4" poster={`${IMG}/Impact/6GW.jpg`} />
+          <div className="absolute inset-0 -z-10 bg-gradient-to-r from-brand-ink/90 via-brand-ink/75 to-brand-ink/50" />
           <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 lg:grid-cols-2">
             <Reveal><p className="eyebrow !text-brand-sky">Sustainability</p><h2 className="h2 !text-white">Energy for today, with tomorrow in mind</h2><p className="mt-5 max-w-lg text-lg text-white/85">Sustainability isn’t a feature, it’s a foundation. Our work is designed to protect what matters.</p></Reveal>
             <Reveal delay={0.15} className="text-center lg:text-right">
